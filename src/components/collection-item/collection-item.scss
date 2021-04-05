@@ -1,0 +1,34 @@
+@import '../../sassStyles/_variables';
+@import '../../sassStyles/_functions';
+
+.CollectionItem {
+  display: flex;
+  flex-direction: column;
+  height: rem(400);
+  width: 23%;
+
+  &_img {
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &_footer {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: rem(14);
+  }
+
+  &_name {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &_price {
+    color: $color-primary;
+  }
+}

@@ -9,11 +9,10 @@ const CategoryItem = ({ title, imageUrl, size }) => {
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
-      >
-        <div className="Category_content">
-          <h3 className="HeadingThree HeadingThree___white">{title}</h3>
-          <span className="Category_subtitle">Shop now</span>
-        </div>
+      />
+      <div className="Category_content">
+        <h3 className="HeadingThree HeadingThree___white">{title}</h3>
+        <span className="Category_subtitle">Shop now</span>
       </div>
     </div>
   );

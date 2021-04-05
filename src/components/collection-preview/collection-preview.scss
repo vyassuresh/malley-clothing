@@ -1,0 +1,14 @@
+@import '../../sassStyles/_variables';
+@import '../../sassStyles/_functions';
+
+.CollectionPreview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(40);
+
+  &_gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(30);
+  }
+}
