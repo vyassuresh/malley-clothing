@@ -1,12 +1,26 @@
 .u-margin-bottom-sm {
   margin-bottom: rem(20);
 }
+
 .u-margin-bottom-md {
   margin-bottom: rem(40);
 }
+
 .u-margin-bottom-lg {
   margin-bottom: rem(60);
 }
+
 .u-margin-bottom-huge {
   margin-bottom: rem(80);
+}
+
+.center {
+  text-align: center;
+}
+
+.u-small-text {
+  color: #999;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 600;
 }

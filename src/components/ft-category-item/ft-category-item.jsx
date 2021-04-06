@@ -1,8 +1,9 @@
 import React from 'react';
+import CustomButton from '../custom-button/custom-button';
 
 import './ft-category-item.scss';
 
-const FtCategoryItem = ({ title, imageUrl }) => (
+const FtCategoryItem = ({ title, imageUrl, desc }) => (
   <div className="FtCategoryItem">
     <div className="FtCategoryItem__img">
       <img src={imageUrl} alt="" />
@@ -10,13 +11,10 @@ const FtCategoryItem = ({ title, imageUrl }) => (
     <div className="FtCategoryItem__content">
       <div className="FtCategoryItem__text">
         <div className="FtCategoryItem__heading">
-          <h2 className="HeadingTwo">{title}</h2>
+          <h2 className="HeadingTwo HeadingTwo--dots">{title}</h2>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p className="u-small-text u-margin-bottom-md">{desc}</p>
+        <CustomButton extraClass="btn--outline">Shop now</CustomButton>
       </div>
     </div>
   </div>

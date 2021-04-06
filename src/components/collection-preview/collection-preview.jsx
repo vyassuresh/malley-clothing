@@ -5,7 +5,7 @@ import './collection-preview.scss';
 
 const CollectionPreview = ({ title, items }) => (
   <div className="CollectionPreview row">
-    <h2 className="HeadingTwo">{title}</h2>
+    <h2 className="HeadingTwo HeadingTwo--dots">{title}</h2>
     <div className="CollectionPreview_gallery">
       {items
         .filter((item, index) => index < 4)

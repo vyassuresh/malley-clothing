@@ -8,6 +8,7 @@
   text-transform: uppercase;
   transition: all 0.3s ease-out;
   letter-spacing: 5px;
+  z-index: 1;
 
   &--button {
     padding: rem(15) rem(30);
@@ -16,7 +17,7 @@
     transition: all 0.3s ease-out;
 
     &:hover {
-      background-color: $color-black;
+      background-color: $color-primary;
       color: $color-white;
     }
   }
@@ -27,20 +28,29 @@
   text-transform: uppercase;
   font-weight: 400;
   transition: all 0.3s ease-out;
-  letter-spacing: 3px;
-  font-size: rem(38);
-  text-align: center;
+  letter-spacing: 1px;
+  font-size: rem(36);
   position: relative;
-  margin-bottom: rem(60);
+  line-height: 1.4;
 
-  &::after {
-    content: '...';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -45px;
-    color: $color-gray-dark;
-    letter-spacing: 7px;
-    font-size: 50px;
+  &--small {
+    font-size: rem(34);
+    text-transform: initial;
+  }
+
+  &--dots {
+    margin-bottom: rem(60);
+    text-align: center;
+
+    &::after {
+      content: '...';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -45px;
+      color: $color-gray-dark;
+      letter-spacing: 7px;
+      font-size: 50px;
+    }
   }
 }

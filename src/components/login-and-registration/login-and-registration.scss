@@ -1,0 +1,76 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/functions';
+
+.account-page {
+  display: flex;
+  height: calc(100vh - 7.5rem);
+
+  &__img {
+    width: 50%;
+    overflow: hidden;
+    background-image: url('https://i.ibb.co/XtnP9Jk/fashion.jpg');
+    background-size: 130%;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+
+    @extend %darken-on-hover;
+
+    &:hover {
+      background-image: url('https://i.ibb.co/XtnP9Jk/fashion.jpg');
+      background-size: 140%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(1000);
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 90%;
+    align-self: center;
+
+    .signin,
+    .signup,
+    .social-login {
+      width: 50%;
+    }
+  }
+
+  .form-switcher {
+    color: $color-gray-darker;
+
+    span {
+      cursor: pointer;
+
+      &.dark {
+        color: $color-black;
+      }
+    }
+  }
+
+  .social-login {
+    margin: rem(20) 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+      display: inline-flex;
+      border: 1px solid $color-gray-darker;
+      padding: rem(10) 0;
+      border-radius: 5px;
+      width: 48%;
+      justify-content: center;
+    }
+
+    &__icon {
+      height: rem(16);
+      width: rem(16);
+      margin-right: rem(5);
+    }
+  }
+}

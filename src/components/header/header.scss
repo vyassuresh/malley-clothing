@@ -33,6 +33,9 @@
       transition: all 0.2s ease-out;
       position: relative;
       font-family: 'Jost', sans-serif;
+      display: flex;
+      align-items: center;
+      font-size: rem(15);
 
       &:last-child {
         margin-right: 0;
@@ -58,6 +61,16 @@
       height: 1px;
       background-color: $color-primary;
       transition: all 0.3s ease-out;
+    }
+
+    &--icon {
+      svg {
+        height: rem(18);
+      }
+
+      &::after {
+        content: none;
+      }
     }
   }
 }

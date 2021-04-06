@@ -31,7 +31,7 @@ class ArrivalsContainer extends React.Component {
     return (
       <div className="ArrivalsContainer">
         <div className="row">
-          <h2 className="HeadingTwo">Newest Arrivals</h2>
+          <h2 className="HeadingTwo HeadingTwo--dots">Newest Arrivals</h2>
           <div className="ArrivalsContainer_gallery">
             {this.state.categories.map(({ title, imageUrl, size, id }) => (
               <ArrivalsItem key={id} title={title} imageUrl={imageUrl} size={size} />

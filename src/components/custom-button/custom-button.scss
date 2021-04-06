@@ -1,0 +1,74 @@
+@import '../../sassStyles/functions';
+@import '../../sassStyles/variables';
+
+%btn-before {
+  content: '';
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+%hover-btn-before {
+  &::before {
+    width: 100%;
+  }
+}
+
+.btn {
+  padding: rem(13) rem(35);
+  font-size: rem(13);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: 'Mulish';
+  position: relative;
+  z-index: 1;
+  background: transparent;
+
+  &--outline {
+    color: $color-black;
+    border: 1px solid $color-black;
+
+    &::before {
+      @extend %btn-before;
+      background-color: $color-primary;
+    }
+
+    &:hover {
+      color: $color-white;
+      border: 1px solid $color-primary;
+
+      @extend %hover-btn-before;
+    }
+  }
+
+  &--fill {
+    color: $color-white;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+
+    &::before {
+      @extend %btn-before;
+      background-color: $color-white;
+    }
+
+    &:hover {
+      color: $color-black;
+      border: 1px solid $color-black;
+
+      @extend %hover-btn-before;
+    }
+  }
+
+  &--full-w {
+    width: 100%;
+    display: block;
+  }
+}

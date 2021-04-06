@@ -3,7 +3,9 @@
 @import './_typography';
 @import './_utilities';
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,8 +24,4 @@ body {
   max-width: rem(1140);
   margin-left: auto;
   margin-right: auto;
-}
-
-.center {
-  text-align: center;
 }

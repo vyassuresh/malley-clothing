@@ -1,0 +1,20 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/functions';
+
+.form-group {
+  margin-bottom: rem(20);
+}
+
+.form-input {
+  padding: rem(15) rem(15);
+  border: 1px solid $color-gray-dark;
+  font-family: 'Mulish';
+  width: 100%;
+  transition: all 0.2s ease-out;
+  color: $color-black;
+  outline: 0;
+
+  &:focus {
+    border: 1px solid $color-gray-darker;
+  }
+}
