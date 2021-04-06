@@ -19,16 +19,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: rem(14);
+    font-family: 'Jost';
   }
 
   &_name {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-
-  &_price {
-    color: $color-primary;
   }
 }

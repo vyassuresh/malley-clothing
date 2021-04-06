@@ -1,0 +1,63 @@
+@import '../../sassStyles/functions';
+@import '../../sassStyles/variables';
+
+.Header {
+  height: rem(120);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-container {
+    flex-grow: 4;
+
+    .logo {
+      height: ren(50);
+      width: rem(50);
+    }
+  }
+}
+
+.Navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  &_item {
+    &:link,
+    &:visited {
+      margin: 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: $color-black;
+      transition: all 0.2s ease-out;
+      position: relative;
+      font-family: 'Jost', sans-serif;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $color-primary;
+      transition: all 0.3s ease-out;
+    }
+  }
+}

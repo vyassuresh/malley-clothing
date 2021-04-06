@@ -1,10 +1,12 @@
 import React from 'react';
-import CategoryContainer from '../../components/category-container/category-container';
+import ArrivalsContainer from '../../components/arrivals-container/arrivals-container';
+import FtCategoryContainer from '../../components/ft-category-container/ft-category-container';
 import './homepage.scss';
 
 const HomePage = () => (
   <div className="HomePage">
-    <CategoryContainer />
+    <FtCategoryContainer />
+    <ArrivalsContainer />
   </div>
 );
 
