@@ -6,6 +6,7 @@ import CustomButton from '../custom-button/custom-button';
 import { ReactComponent as GoogleIcon } from '../../assets/google.svg';
 import { ReactComponent as FacebookIcon } from '../../assets/facebook.svg';
 import './login-and-registration.scss';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 class AccountPage extends React.Component {
   constructor() {
@@ -42,7 +43,7 @@ class AccountPage extends React.Component {
             </span>
           </h2>
           <div className="social-login">
-            <CustomButton extraClass="social-login__btn btn--small">
+            <CustomButton extraClass="social-login__btn btn--small" onClick={signInWithGoogle}>
               <GoogleIcon className="social-login__icon" /> Google
             </CustomButton>
             <CustomButton extraClass="social-login__btn btn--small">

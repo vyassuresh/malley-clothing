@@ -3,7 +3,8 @@
 
 .account-page {
   display: flex;
-  height: calc(100vh - 7.5rem);
+  height: calc(100vh - #{rem(80)});
+  background-color: $color-gray-light;
 
   &__img {
     width: 50%;
@@ -31,7 +32,7 @@
     align-items: center;
     text-align: center;
     width: 50%;
-    height: 90%;
+    height: 82%;
     align-self: center;
 
     .signin,
